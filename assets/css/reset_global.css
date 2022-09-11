@@ -1,0 +1,35 @@
+:root {
+    --marineblue: #0B0D17;
+    --clearblue: #D0D6F9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    vertical-align: baseline;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--marineblue);
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

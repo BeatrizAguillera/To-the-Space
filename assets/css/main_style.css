@@ -1,0 +1,106 @@
+@import url(../css/reset_global.css);
+
+body {
+    background: url(../home/background-home-desktop.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+#pageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    margin-top: 30px;
+    position: relative;
+}
+
+#pageHeader .logo {
+    margin: auto 35px;
+}
+
+#pageHeader #pageMenu {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(15px);
+}
+
+#pageHeader hr {
+    width: 35vw;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    left: 130px;
+    z-index: 1;
+}
+
+#pageHeader #pageMenu li {
+    margin: 0 30px;
+    padding: 35px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    border-bottom: 4px solid transparent;
+}
+
+#pageHeader #pageMenu li span {
+    font-weight: bold;
+}
+
+#pageHeader #pageMenu li.active {
+    border-bottom: .2rem solid #FFF;
+}
+
+#mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 180px 0;
+}
+
+#mainContainer #mainInfo {
+    width: 450px;
+}
+
+#mainContainer #mainInfo #introduction {
+    letter-spacing: 4.75px;
+    font-size: 28px;
+    color: var(--clearblue);
+    text-transform: uppercase;
+}
+
+#mainContainer #mainInfo span {
+    margin: 20px 0;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    text-transform: uppercase;
+}
+
+#mainContainer #mainInfo #description {
+    color: var(--clearblue);
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.8em;
+}
+
+#mainContainer #exploreButton {
+    background-color: #FFF;
+    padding: 7em 3.5em;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+#mainContainer #exploreButton a {
+    background-color: #FFF;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+}
+
+#mainContainer #exploreButton:hover {
+    outline: 75px solid rgb(30, 31, 43);
+}
