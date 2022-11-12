@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Space tourism website</title>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Import Styles -->
   <link rel="stylesheet" href="assets/css/main_style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <!-- Import Vue.js -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
+  <div id="app">
   <header id="pageHeader">
     <a href="index.html" class="logo"><img src="assets/shared/logo.svg" alt="logo image"></a>
     <hr>
@@ -26,7 +29,6 @@
     </nav>
   </header>
 
-  <body>
     <section id="mainContainer">
       <div id="mainInfo">
         <h5 id="introduction">So, you want to travel to</h5>
@@ -37,7 +39,16 @@
       </div>
       <div id="exploreButton"><a href="#">Explore</a></div>
     </section>
-  </body>
+  </div>
 
+  <!-- Import App -->
+  <script src="./assets/scripts/main.js"></script>
+
+  <!-- Import Components -->
+  <script src="./assets/scripts/components/destinations.js"></script>
+
+  <script src="./assets/scripts/components/technologies.js"></script>
+
+  <script src="./assets/scripts/components/crew.js"></script>
 </body>
 </html>
