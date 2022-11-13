@@ -1,0 +1,52 @@
+.u_mainContainer {
+    width: 75vw;
+    margin: 2rem auto;
+}
+
+.u_contentContainer {
+    width: 70vw;
+    margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.u_navItens {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.u_mainInfo {
+  width: 450px;
+}
+
+.u_introduction {
+  letter-spacing: 4.75px;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 2.8rem 0;
+}
+
+.u_introduction .u_numberPage {
+    font-weight: bolder;
+    color: gray;
+    margin-right: 10px;
+}
+
+.u_titles {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.u_description {
+
+  color: var(--clearblue);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: regular;
+  line-height: 1.8em;
+}

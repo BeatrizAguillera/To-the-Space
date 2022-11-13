@@ -1,59 +1,38 @@
 @import url(../css/reset_global.css);
+@import url(../css/universal_styles.css);
 @import url(../css/components/header.css);
 
 body {
-    background: url(../home/background-home-desktop.jpg) no-repeat center fixed;
-    background-size: cover;
+  background: url(../home/background-home-desktop.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
-#mainContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 150px 180px 0;
-}
-
-#mainContainer #mainInfo {
-    width: 450px;
-}
-
-#mainContainer #mainInfo #introduction {
-    letter-spacing: 4.75px;
-    font-size: 28px;
+.u_mainContainer .u_mainInfo #mainIntroduction {
     color: var(--clearblue);
-    text-transform: uppercase;
 }
 
-#mainContainer #mainInfo span {
-    margin: 20px 0;
-    font-family: 'Bellefair', serif;
-    font-size: 150px;
-    text-transform: uppercase;
+#mainTitle {
+  font-family: "Bellefair", serif;
+  font-size: 150px;
+  text-transform: uppercase;
 }
 
-#mainContainer #mainInfo #description {
-    color: var(--clearblue);
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 1.8em;
+.u_mainContainer #exploreButton {
+  background-color: #fff;
+  padding: 7em 3.5em;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
 }
 
-#mainContainer #exploreButton {
-    background-color: #FFF;
-    padding: 7em 3.5em;
-    border-radius: 50%;
-    transition: .3s ease-in-out;
+.u_mainContainer #exploreButton a {
+  background-color: #fff;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
 }
 
-#mainContainer #exploreButton a {
-    background-color: #FFF;
-    letter-spacing: 2.7px;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'Bellefair', serif;
-    font-size: 28px;
-}
-
-#mainContainer #exploreButton:hover {
-    outline: 75px solid rgb(30, 31, 43);
+.u_mainContainer #exploreButton:hover {
+  outline: 75px solid rgb(30, 31, 43);
 }

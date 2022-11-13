@@ -1,9 +1,8 @@
-
 #pageHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    max-width: 100vw;
     margin-top: 30px;
     position: relative;
 }
@@ -39,8 +38,6 @@
 
 #pageHeader #pageMenu li a {
     padding: 35px auto;
-    text-transform: uppercase;
-    letter-spacing: 2.7px;
 }
 
 #pageHeader #pageMenu li span {

@@ -1,0 +1,60 @@
+@import url(../css/reset_global.css);
+@import url(../css/universal_styles.css);
+@import url(../css/components/header.css);
+
+body {
+    background-image: url(../destination/background-destination-desktop.jpg);
+    backdrop-filter: blur(1px);
+}
+
+#destinationsNavBar ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#destinationsNavBar ul .destinationItens {
+    color: var(--clearblue);
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+#destinationsNavBar ul .destinationItens li.active {
+    border-bottom: 2px solid #FFF;
+}
+
+.destinationTexts {
+    margin: 2rem auto 4rem auto;
+}
+
+#destinationTitle {
+    font-size: 100px;
+}
+
+.u_mainInfo hr {
+    height: 1.5px;
+    width: 100%;
+    background-color: gray;
+    margin: 20px 0;
+}
+
+#destinationInfos ul {
+    display: flex;
+}
+
+#destinationInfos ul li {
+    margin-right: auto;
+}
+
+#destinationInfos ul li h3 {
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    text-transform: uppercase;
+    color: var(--clearblue);
+    padding: 5px 0;
+}
+
+#destinationInfos ul li p {
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    text-transform: uppercase;
+}
