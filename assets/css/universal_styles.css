@@ -11,12 +11,18 @@
   justify-content: space-between;
 }
 
+.u_navBar ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .u_navItens {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2.7px;
     margin-right: auto;
     cursor: pointer;
+    padding: 5px;
 }
 
 .u_mainInfo {

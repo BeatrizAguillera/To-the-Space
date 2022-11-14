@@ -2,34 +2,18 @@ const app = Vue.createApp({
     data() {
         return {
             message: 'Hello, World!',
-
+            tabs: [
+                destinationsBoolean = false,
+                exploreBoolean = false,
+            ]
         }
     },
     methods: {
+        removeAll() {
+        },
+        showDestinations() {
+            return this.tabs.destinationsBoolean = true
+        },
     }
 })
 
-// const app = Vue.createApp({
-//     data() {
-//         return {
-//             message: 'Hello, World!',
-//             tabs: [
-//                 showingExplore = false,
-//                 showingDestinations = false,
-//                 showingCrew = false,
-//                 showingT = false,
-//             ],
-//         }
-//     },
-//     methods: {
-//         showD() {
-//             return this.tabs.showingT = true
-//         },
-//         showDestinations() {
-//             return this.tabs.showingDestinations = true
-//         },
-//         removeAll() {
-//             return this.tabs.showingDestinations = false
-//         },
-//     }
-// })

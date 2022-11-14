@@ -1,20 +1,13 @@
 @import url(../css/reset_global.css);
 @import url(../css/universal_styles.css);
-@import url(../css/components/header.css);
 
 body {
     background-image: url(../destination/background-destination-desktop.jpg);
     backdrop-filter: blur(1px);
 }
 
-#destinationsNavBar ul {
-    display: flex;
-    justify-content: flex-start;
-}
-
 #destinationsNavBar ul .destinationItens {
     color: var(--clearblue);
-    padding: 5px;
     border-bottom: 2px solid transparent;
 }
 
