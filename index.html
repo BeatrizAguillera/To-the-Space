@@ -21,32 +21,24 @@
     <hr>
     <nav>
       <ul id="pageMenu">
-        <li class="active"><a href="index.html" class="u_navItens"><span>00</span> Home</a></li>
-        <li><a href="destination.html" class="u_navItens"><span>01</span> Destination</a></li>
-        <li><a href="crew.html" class="u_navItens"><span>02</span> Crew</a></li>
-        <li><a href="technology.html" class="u_navItens"><span>03</span> Technology</a></li>
+        <li class="active"><a href="" class="u_navItens"><span>00</span> Home</a></li>
+        <li><a class="u_navItens" @click="showDestinations()"><span>01</span> Destination</a></li>
+        <li><a href="" class="u_navItens" @click="removeAll()"><span>02</span> Crew</a></li>
+        <li><a href="" class="u_navItens" @click="showD()"><span>03</span> Technology</a></li>
       </ul>
     </nav>
   </header>
 
-    <main>
-      <section class="u_mainContainer u_contentContainer">
-      <div class="u_mainInfo">
-        <h2 id="mainIntroduction" class="u_introduction">So, you want to travel to</h2>
-        <h1 id="mainTitle" class="u_titles">Space</h1>
-        <p class="u_description">Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!</p>
-      </div>
-      <div id="exploreButton"><a href="#">Explore</a></div>
-      </section>
-    </main>
+    <explore v-show="tabs.showingDestinations"></explore>
+    <destinations v-show="tabs.showingDestinations"></destinations>
+    <technologies v-show="tabs.showingT"></technologies>
   </div>
 
   <!-- Import App -->
   <script src="./assets/scripts/main.js"></script>
 
   <!-- Import Components -->
+  <script src="./assets/scripts/components/explore.js"></script>
   <script src="./assets/scripts/components/destinations.js"></script>
   <script src="./assets/scripts/components/technologies.js"></script>
   <script src="./assets/scripts/components/crew.js"></script>
