@@ -1,7 +1,7 @@
 app.component('destinations', {
     template:
     /*html*/
-    `<section class="u_mainContainer">
+    `<section id="destinantionsTab" class="u_mainContainer">
         <h1 class="u_introduction"><span class="u_numberPage">01</span>Pick your destination</h1>
 
         <article class="u_contentContainer">

@@ -2,6 +2,10 @@
 @import url(../css/universal_styles.css);
 @import url(../css/components/header.css);
 
+@import url(../css/destination_style.css);
+@import url(../css/crew_style.css);
+@import url(../css/technologies_style.css);
+
 body {
   background: url(../home/background-home-desktop.jpg) no-repeat center fixed;
   background-size: cover;

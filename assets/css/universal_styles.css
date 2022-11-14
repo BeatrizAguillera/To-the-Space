@@ -1,11 +1,13 @@
 .u_mainContainer {
     width: 75vw;
-    margin: 2rem auto;
+    margin-top: 2rem;
+    margin: auto;
 }
 
 .u_contentContainer {
-    width: 70vw;
-    margin: 2rem auto;
+  width: 70vw;
+  margin: auto;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +24,6 @@
     letter-spacing: 2.7px;
     margin-right: auto;
     cursor: pointer;
-    padding: 5px;
 }
 
 .u_mainInfo {

@@ -13,6 +13,7 @@ body {
 
 #destinationsNavBar ul .destinationItens li.active {
     border-bottom: 2px solid #FFF;
+    padding: 5px;
 }
 
 .destinationTexts {

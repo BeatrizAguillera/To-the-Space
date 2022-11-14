@@ -5,3 +5,57 @@ body {
         background-image: url(../crew/background-crew-desktop.jpg);
 }
 
+#crewtab {
+    margin-bottom: 0;
+}
+
+#crewIntroduction {
+    padding-bottom: 150px;
+}
+
+#crewMemberRole {
+    font-size: 32px;
+    color: gray;
+}
+
+#crewMemberName {
+    font-size: 56px;
+    width: 600px;
+}
+
+.crewTexts {
+    margin: 2rem auto 4rem auto;
+}
+
+#crewTab .u_mainInfo hr {
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+/* 
+.u_mainInfo hr {
+    height: 1.5px;
+    width: 100%;
+    background-color: gray;
+    margin: 20px 0;
+} */
+
+#crewNavBar ul .crewItens {
+    background-color: #979797;
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#crewNavBar ul .crewItens:hover {
+    background-color: darkgray;
+}
+
+#crewNavBar ul .crewItens li:active {
+    background-color: white;
+}
+
+

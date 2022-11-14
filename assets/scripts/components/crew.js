@@ -1,25 +1,24 @@
 app.component('crew', {
     template:
         /*html*/
-        `<section class="u_mainContainer">
-        <h1 class="u_introduction"><span class="u_numberPage">02</span>Meet your crew</h1>
-
+        `<section id="crewTab" class="u_mainContainer">
         <article class="u_contentContainer">
-    
+        
           <div class="u_mainInfo">
+                    <h1 id="crewIntroduction" class="u_introduction"><span class="u_numberPage">02</span>Meet your crew</h1>
 
             <div class="crewTexts">
             <h3 id="crewMemberRole" class="u_titles">{{ crewMemberRole }}</h3>
-              <h2 id="crewMemberTitle" class="u_titles">{{ crewMemberName }}</h2>
+              <h2 id="crewMemberName" class="u_titles">{{ crewMemberName }}</h2>
               <p class="u_description">{{ crewMemberDescription }}</p>
             </div>
               <hr>
             <nav class="u_navBar" id="crewNavBar">
               <ul>
-                <li class="u_navItens crewItens" @mouseover="updatecrewMember(0)"></li>
-                <li class="u_navItens crewItens" @mouseover="updatecrewMember(1)"></li>
-                <li class="u_navItens crewItens" @mouseover="updatecrewMember(2)"></li>
-                <li class="u_navItens crewItens" @mouseover="updatecrewMember(3)"></li>
+                <li class="u_navItens crewItens" @click="updatecrewMember(0)"></li>
+                <li class="u_navItens crewItens" @click="updatecrewMember(1)"> </li>
+                <li class="u_navItens crewItens" @click="updatecrewMember(2)"> </li>
+                <li class="u_navItens crewItens" @click="updatecrewMember(3)"> </li>
               </ul>
             </nav>
           </div>
