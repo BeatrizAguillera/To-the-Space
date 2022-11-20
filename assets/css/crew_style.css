@@ -1,9 +1,9 @@
 @import url(../css/reset_global.css);
 @import url(../css/universal_styles.css);
 
-body {
+/* body {
         background-image: url(../crew/background-crew-desktop.jpg);
-}
+} */
 
 #crewtab {
     margin-bottom: 0;
@@ -16,11 +16,6 @@ body {
 #crewMemberRole {
     font-size: 32px;
     color: gray;
-}
-
-#crewMemberName {
-    font-size: 56px;
-    width: 600px;
 }
 
 .crewTexts {

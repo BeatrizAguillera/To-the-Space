@@ -1,19 +1,28 @@
 const app = Vue.createApp({
     data() {
         return {
-            message: 'Hello, World!',
-            tabs: [
-                destinationsBoolean = false,
-                exploreBoolean = false,
-            ]
+            // selectedTab: 0,
+            exploreTab: true,
+            destinationsTab: false,
         }
     },
     methods: {
-        removeAll() {
-        },
-        showDestinations() {
-            return this.tabs.destinationsBoolean = true
-        },
+        // updateTabs(index) {
+        //     this.selectedTab = index;
+        // },
+        // tabTrue() {
+        //     this.tabs[this.selectedTab] = true
+        //     return console.log(this.tabs[this.selectedTab])
+        // },
+
+        // showTab(property) {
+        //     return property = true
+        // },
+        // hideAllTabs() {
+        //     this.tabs.forEach(element => {
+        //         element = false
+        //     });
+        // }
     }
 })
 

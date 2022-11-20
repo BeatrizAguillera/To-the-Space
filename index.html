@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <!-- Import Styles -->
   <link rel="stylesheet" href="assets/css/main_style.css">
-      <link rel="stylesheet" href="assets/css/crew_style.css">
+      <link rel="stylesheet" href="assets/css/technologies_style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
     <nav>
       <ul id="pageMenu">
         <li class="u_navItens active"><span>00</span> Home</li>
-        <li class="u_navItens" ><span>01</span> Destination</li>
+        <li class="u_navItens"><span>01</span> Destination</li>
         <li class="u_navItens"><span>02</span> Crew</li>
         <li class="u_navItens"><span>03</span> Technology</li>
       </ul>
@@ -31,10 +31,10 @@
   </header>
     <div id="componentsContainer">
 
-    <explore></explore>
-    <destinations></destinations>
-    <crew></crew>
-    <!-- <technologies></technologies> -->
+    <explore v-show="!exploreTab"></explore>
+    <destinations id="destinationsComponent" v-show="destinationsTab"></destinations>
+    <!-- <crew></crew> -->
+    <technologies></technologies>
 
     </div>
   </div>

@@ -1,10 +1,10 @@
 @import url(../css/reset_global.css);
 @import url(../css/universal_styles.css);
 
-body {
+/* body {
     background-image: url(../destination/background-destination-desktop.jpg);
     backdrop-filter: blur(1px);
-}
+} */
 
 #destinationsNavBar ul .destinationItens {
     color: var(--clearblue);

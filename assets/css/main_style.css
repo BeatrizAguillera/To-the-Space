@@ -6,6 +6,11 @@
 @import url(../css/crew_style.css);
 @import url(../css/technologies_style.css);
 
+
+.hideTab {
+    display: none;
+}
+
 body {
   background: url(../home/background-home-desktop.jpg) no-repeat center fixed;
   background-size: cover;
@@ -16,9 +21,7 @@ body {
 }
 
 #mainTitle {
-  font-family: "Bellefair", serif;
   font-size: 150px;
-  text-transform: uppercase;
 }
 
 .u_mainContainer #exploreButton {

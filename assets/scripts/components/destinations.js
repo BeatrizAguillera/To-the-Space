@@ -32,7 +32,7 @@ app.component('destinations', {
     </section>`,
 
     data() {
-        return { 
+        return {
           selectedDestination: 0,
           destinations: [
             {

@@ -9,7 +9,7 @@ app.component('crew', {
 
             <div class="crewTexts">
             <h3 id="crewMemberRole" class="u_titles">{{ crewMemberRole }}</h3>
-              <h2 id="crewMemberName" class="u_titles">{{ crewMemberName }}</h2>
+              <h2 class="u_titles">{{ crewMemberName }}</h2>
               <p class="u_description">{{ crewMemberDescription }}</p>
             </div>
               <hr>
