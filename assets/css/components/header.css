@@ -36,18 +36,14 @@
     border-bottom: 4px solid transparent;
 }
 
-#pageHeader #pageMenu li a {
-    padding: 35px auto;
-}
-
 #pageHeader #pageMenu li span {
     font-weight: bold;
 }
 
-#pageHeader #pageMenu li.active {
-    border-bottom: .2rem solid #FFF;
-}
-
 #pageHeader #pageMenu li:hover {
     border-bottom: .2rem solid gray;
+}
+
+#pageHeader #pageMenu li:active {
+    border-bottom: .2rem solid #FFF;
 }

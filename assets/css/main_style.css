@@ -6,14 +6,37 @@
 @import url(../css/crew_style.css);
 @import url(../css/technologies_style.css);
 
-
-.hideTab {
-    display: none;
+.background {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: no-repeat center fixed var(--marineblue);
+  background-size: cover;
 }
 
-body {
-  background: url(../home/background-home-desktop.jpg) no-repeat center fixed;
-  background-size: cover;
+.homeBackground {
+  background-image: url(../home/background-home-desktop.jpg);
+}
+
+.destinationBackground {
+  background-image: url(../destination/background-destination-desktop.jpg);
+}
+
+.crewBackground {
+  background-image: url(../crew/background-crew-desktop.jpg);
+}
+
+.technologyBackground {
+  background-image: url(../technology/background-technology-desktop.jpg);
+}
+
+/* #homeTab {
+  height: 70vh;
+  margin: auto;
+} */
+
+#homeTab {
+  margin: 3rem auto;
 }
 
 .u_mainContainer .u_mainInfo #mainIntroduction {
@@ -26,19 +49,24 @@ body {
 
 .u_mainContainer #exploreButton {
   background-color: #fff;
-  padding: 7em 3.5em;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  padding: 4em 2em;
   border-radius: 50%;
   transition: 0.3s ease-in-out;
 }
 
-.u_mainContainer #exploreButton a {
+/* .u_mainContainer #exploreButton a {
   background-color: #fff;
   letter-spacing: 2.7px;
   text-transform: uppercase;
   color: black;
   font-family: "Bellefair", serif;
   font-size: 28px;
-}
+} */
 
 .u_mainContainer #exploreButton:hover {
   outline: 75px solid rgb(30, 31, 43);

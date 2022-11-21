@@ -1,8 +1,7 @@
-app.component('explore', {
+app.component('home', {
     template:
     /*html*/
-    `<main>
-    <section class="u_mainContainer u_contentContainer">
+    `<section id="homeTab" class="u_mainContainer u_contentContainer">
         <div class="u_mainInfo">
             <h2 id="mainIntroduction" class="u_introduction">So, you want to travel to</h2>
             <h1 id="mainTitle" class="u_titles">Space</h1>
@@ -10,18 +9,11 @@ app.component('explore', {
                 outer space and not hover kind of on the edge of it. Well sit back, and relax
                 because we’ll give you a truly out of this world experience!</p>
         </div>
-        <div id="exploreButton"><a href="#">Explore</a></div>
-    </section>
-</main>`,
+        <div id="exploreButton">Explore</div>
+    </section>`,
 
     data() {
         return {
-            anything: 0,
         }
-    },
-    methods: {
-
-    },
-    computed: {
     },
 })

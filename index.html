@@ -15,35 +15,36 @@
   <!-- Import Vue.js -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body>
+  <body>
   <div id="app">
+    <div  class="background" :class="classBackgroundsObject">
+
   <header id="pageHeader">
     <a href="index.html" class="logo"><img src="assets/shared/logo.svg" alt="logo image"></a>
     <hr>
     <nav>
       <ul id="pageMenu">
-        <li class="u_navItens active"><span>00</span> Home</li>
-        <li class="u_navItens"><span>01</span> Destination</li>
-        <li class="u_navItens"><span>02</span> Crew</li>
-        <li class="u_navItens"><span>03</span> Technology</li>
+        <li class="u_navItens" @click="hideTabs(), showHome()"><span>00</span> Home</li>
+        <li class="u_navItens" @click="hideTabs(), showDestinations()"><span>01</span> Destination</li>
+        <li class="u_navItens" @click="hideTabs(), showCrew()"><span>02</span> Crew</li>
+        <li class="u_navItens" @click="hideTabs(), showTechnology()"><span>03</span> Technology</li>
       </ul>
     </nav>
   </header>
     <div id="componentsContainer">
-
-    <explore v-show="!exploreTab"></explore>
-    <destinations id="destinationsComponent" v-show="destinationsTab"></destinations>
-    <!-- <crew></crew> -->
-    <technologies></technologies>
-
+    <home v-show="homeTab"></home>
+    <destinations v-show="destinationsTab"></destinations>
+    <crew v-show="crewTab"></crew>
+    <technologies v-show="technologyTab"></technologies>
     </div>
   </div>
+</div>
 
   <!-- Import App -->
   <script src="./assets/scripts/main.js"></script>
 
   <!-- Import Components -->
-  <script src="./assets/scripts/components/explore.js"></script>
+  <script src="./assets/scripts/components/home.js"></script>
   <script src="./assets/scripts/components/destinations.js"></script>
   <script src="./assets/scripts/components/technologies.js"></script>
   <script src="./assets/scripts/components/crew.js"></script>

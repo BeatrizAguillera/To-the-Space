@@ -1,28 +1,46 @@
 const app = Vue.createApp({
     data() {
         return {
-            // selectedTab: 0,
-            exploreTab: true,
+            // tabs: [
+            //     { homeTab: true },
+            //     { destinationsTab: false },
+            //     { crewTab: false },
+            //     { technologyTab: false },
+            // ]
+            homeTab: true,
             destinationsTab: false,
+            crewTab: false,
+            technologyTab: false,
         }
     },
     methods: {
-        // updateTabs(index) {
-        //     this.selectedTab = index;
-        // },
-        // tabTrue() {
-        //     this.tabs[this.selectedTab] = true
-        //     return console.log(this.tabs[this.selectedTab])
-        // },
-
-        // showTab(property) {
-        //     return property = true
-        // },
-        // hideAllTabs() {
-        //     this.tabs.forEach(element => {
-        //         element = false
-        //     });
-        // }
+        hideTabs() {
+            this.homeTab = false,
+            this.destinationsTab = false,
+            this.crewTab = false,
+            this.technologyTab = false
+        },
+        showHome() {
+            return this.homeTab = true
+        },
+        showDestinations() {
+            return this.destinationsTab = true
+        },
+        showCrew() {
+            return this.crewTab = true
+        },
+        showTechnology() {
+            return this.technologyTab = true
+        },
+    },
+    computed: {
+        classBackgroundsObject() { 
+        return {
+            homeBackground: this.homeTab,
+            destinationBackground: this.destinationsTab,
+            crewBackground: this.crewTab,
+            technologyBackground: this.technologyTab }
+        }
     }
 })
 

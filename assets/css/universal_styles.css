@@ -1,16 +1,19 @@
+#componentsContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 75vh;
+  margin: auto;
+}
+
 .u_mainContainer {
     width: 75vw;
-    margin-top: 2rem;
-    margin: auto;
 }
 
 .u_contentContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  width: 75vw;
-  margin: auto;
-  margin-top: 2rem;
 }
 
 .u_navBar ul {
@@ -34,7 +37,6 @@
   letter-spacing: 4.75px;
   font-size: 28px;
   text-transform: uppercase;
-  padding: 2.8rem 0;
 }
 
 .u_introduction .u_numberPage {
