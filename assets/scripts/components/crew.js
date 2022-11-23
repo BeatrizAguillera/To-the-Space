@@ -9,8 +9,8 @@ app.component('crew', {
 
             <div class="crewTexts">
             <h3 id="crewMemberRole" class="u_titles">{{ crewMemberRole }}</h3>
-              <h2 class="u_titles">{{ crewMemberName }}</h2>
-              <p class="u_description">{{ crewMemberDescription }}</p>
+              <h2 class="u_titles" id="crewMemberName">{{ crewMemberName }}</h2>
+              <p class="u_description" id="crewDescription">{{ crewMemberDescription }}</p>
             </div>
               <hr>
             <nav class="u_navBar" id="crewNavBar">
@@ -23,7 +23,7 @@ app.component('crew', {
             </nav>
           </div>
 
-            <div><img :src="crewMemberImage" alt="crew members image"></div>
+            <img class="u_images" :src="crewMemberImage" alt="crew members image">
         </article>
     </section>`,
 

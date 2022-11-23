@@ -1,7 +1,6 @@
 @import url(../css/reset_global.css);
 @import url(../css/universal_styles.css);
 @import url(../css/components/header.css);
-
 @import url(../css/destination_style.css);
 @import url(../css/crew_style.css);
 @import url(../css/technologies_style.css);
@@ -30,13 +29,9 @@
   background-image: url(../technology/background-technology-desktop.jpg);
 }
 
-/* #homeTab {
-  height: 70vh;
-  margin: auto;
-} */
-
 #homeTab {
-  margin: 3rem auto;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .u_mainContainer .u_mainInfo #mainIntroduction {
@@ -51,22 +46,13 @@
   background-color: #fff;
   letter-spacing: 2.7px;
   text-transform: uppercase;
-  color: black;
+  color: var(--marineblue);
   font-family: "Bellefair", serif;
   font-size: 28px;
-  padding: 4em 2em;
+  padding: 4.2em 2.2em;
   border-radius: 50%;
   transition: 0.3s ease-in-out;
 }
-
-/* .u_mainContainer #exploreButton a {
-  background-color: #fff;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-  color: black;
-  font-family: "Bellefair", serif;
-  font-size: 28px;
-} */
 
 .u_mainContainer #exploreButton:hover {
   outline: 75px solid rgb(30, 31, 43);

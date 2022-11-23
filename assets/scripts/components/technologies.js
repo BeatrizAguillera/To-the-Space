@@ -1,15 +1,15 @@
 app.component('technologies', {
     template:
         /*html*/
-        `<section class="u_mainContainer">
+        `<section id="technologyTab" class="u_mainContainer">
         <h1 class="u_introduction"><span class="u_numberPage">03</span>Space Launch 101</h1>
 
         <article id="technologyContainer" class="u_contentContainer">
             <nav id="technologiesNavBar">
               <ul>
-                <li class="u_navItens technologyItens" @mouseover="updateTechnology(0)">1</li>
-                <li class="u_navItens technologyItens" @mouseover="updateTechnology(1)">2</li>
-                <li class="u_navItens technologyItens" @mouseover="updateTechnology(2)">3</li>
+                <li class="u_navItens technologyItens" @click="updateTechnology(0)">1</li>
+                <li class="u_navItens technologyItens" @click="updateTechnology(1)">2</li>
+                <li class="u_navItens technologyItens" @click="updateTechnology(2)">3</li>
               </ul>
             </nav>
           <div class="u_mainInfo">
@@ -20,7 +20,7 @@ app.component('technologies', {
             </div>
           </div>
 
-          <div><img :src="technologyImage" alt=""></div>
+          <img class="u_images" :src="technologyImage" alt="">
         </article>
     </section>`,
 

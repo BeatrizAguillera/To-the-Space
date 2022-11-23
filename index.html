@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Space tourism website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space tourism website</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <!-- Import Styles -->
-  <link rel="stylesheet" href="assets/css/main_style.css">
-      <link rel="stylesheet" href="assets/css/technologies_style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
-  <!-- Import Vue.js -->
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="assets/css/main_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
   <body>
-  <div id="app">
-    <div  class="background" :class="classBackgroundsObject">
-
-  <header id="pageHeader">
-    <a href="index.html" class="logo"><img src="assets/shared/logo.svg" alt="logo image"></a>
-    <hr>
-    <nav>
-      <ul id="pageMenu">
-        <li class="u_navItens" @click="hideTabs(), showHome()"><span>00</span> Home</li>
-        <li class="u_navItens" @click="hideTabs(), showDestinations()"><span>01</span> Destination</li>
-        <li class="u_navItens" @click="hideTabs(), showCrew()"><span>02</span> Crew</li>
-        <li class="u_navItens" @click="hideTabs(), showTechnology()"><span>03</span> Technology</li>
-      </ul>
-    </nav>
-  </header>
-    <div id="componentsContainer">
-    <home v-show="homeTab"></home>
-    <destinations v-show="destinationsTab"></destinations>
-    <crew v-show="crewTab"></crew>
-    <technologies v-show="technologyTab"></technologies>
+    <div id="app">
+      <div class="background" :class="classBackgroundsObject">
+        <header id="pageHeader">
+          <a href="index.html" class="logo"
+            ><img src="assets/shared/logo.svg" alt="logo image"
+          /></a>
+          <hr />
+          <nav>
+            <ul id="pageMenu">
+              <li
+                class="u_navItens"
+                :class="{ activeBorder: homeTab }"
+                @click="hideTabs(), showHome()"
+              >
+                <span>00</span> Home
+              </li>
+              <li
+                class="u_navItens"
+                :class="{ activeBorder: destinationsTab }"
+                @click="hideTabs(), showDestinations()"
+              >
+                <span>01</span> Destination
+              </li>
+              <li
+                class="u_navItens"
+                :class="{ activeBorder: crewTab }"
+                @click="hideTabs(), showCrew()"
+              >
+                <span>02</span> Crew
+              </li>
+              <li
+                class="u_navItens"
+                :class="{ activeBorder: technologyTab }"
+                @click="hideTabs(), showTechnology()"
+              >
+                <span>03</span> Technology
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div id="componentsContainer">
+          <home v-show="homeTab"></home>
+          <destinations v-show="destinationsTab"></destinations>
+          <crew v-show="crewTab"></crew>
+          <technologies v-show="technologyTab"></technologies>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-  <!-- Import App -->
-  <script src="./assets/scripts/main.js"></script>
+    <!-- Import App -->
+    <script src="./assets/scripts/main.js"></script>
 
-  <!-- Import Components -->
-  <script src="./assets/scripts/components/home.js"></script>
-  <script src="./assets/scripts/components/destinations.js"></script>
-  <script src="./assets/scripts/components/technologies.js"></script>
-  <script src="./assets/scripts/components/crew.js"></script>
+    <!-- Import Components -->
+    <script src="./assets/scripts/components/home.js"></script>
+    <script src="./assets/scripts/components/destinations.js"></script>
+    <script src="./assets/scripts/components/technologies.js"></script>
+    <script src="./assets/scripts/components/crew.js"></script>
 
-  <!-- Mount App -->
-  <script>
-    const mountedApp = app.mount('#app')
-  </script>
-</body>
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
 </html>

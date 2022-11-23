@@ -2,18 +2,19 @@ app.component('destinations', {
     template:
     /*html*/
     `<section id="destinantionsTab" class="u_mainContainer">
-        <h1 class="u_introduction"><span class="u_numberPage">01</span>Pick your destination</h1>
+        <h1 class="u_introduction" id="destinationsIntroduction"><span class="u_numberPage">01</span>Pick your destination</h1>
 
         <article class="u_contentContainer">
-          <div><img :src="destinationImage" alt=""></div>
+          <img class="u_images" :src="destinationImage" alt="destination image">
     
-          <div class="u_mainInfo">
+          <div id="mainInfoDestinations" class="u_mainInfo">
             <nav class="u_navBar" id="destinationsNavBar">
               <ul>
-                <li class="u_navItens destinationItens" @mouseover="updateDestination(0)">Moon</li>
-                <li class="u_navItens destinationItens" @mouseover="updateDestination(1)">Mars</li>
-                <li class="u_navItens destinationItens" @mouseover="updateDestination(2)">Europa</li>
-                <li class="u_navItens destinationItens" @mouseover="updateDestination(3)">Titan</li>
+                <li class="u_navItens destinationItens"
+                 @click="updateDestination(0)">Moon</li>
+                <li class="u_navItens destinationItens" :class="[{ activeDest: moonA }, inactive]"  @click="updateDestination(1)">Mars</li>
+                <li class="u_navItens destinationItens"   @click="updateDestination(2)">Europa</li>
+                <li class="u_navItens destinationItens" :class="[{ titanA: activeD }, inactive]"  @click="updateDestination(3)">Titan</li>
               </ul>
             </nav>
             <div class="destinationTexts">
@@ -33,6 +34,9 @@ app.component('destinations', {
 
     data() {
         return {
+          moonA: false,
+          activeD: 'activeDest',
+          inactive: 'inactive',
           selectedDestination: 0,
           destinations: [
             {
@@ -71,6 +75,9 @@ app.component('destinations', {
       updateDestination(index) {
         this.selectedDestination = index
       },
+      activeThis() {
+        this.moonA = true
+      }
     },
     computed: {
       destinationImage() {

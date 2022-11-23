@@ -44,6 +44,6 @@
     border-bottom: .2rem solid gray;
 }
 
-#pageHeader #pageMenu li:active {
+#pageHeader #pageMenu .activeBorder {
     border-bottom: .2rem solid #FFF;
 }
