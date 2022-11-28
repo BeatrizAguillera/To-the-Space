@@ -30,6 +30,8 @@
 
 ### The challenge
 
+**O desafio**
+
 🇧🇷 Os usuários devem ser capazes de:
 
 - Acompanhar o desempenho das animações conforme carregamento das páginas
@@ -54,6 +56,8 @@
 
 ## My process
 
+**Meu processo**
+
 ### Built with
 
 **Construído com**
@@ -66,11 +70,13 @@
 
 ### What I learned
 
+**O que eu aprendi**
+
 #### 1. Hard skills: gain mastery and familiarity with Vue.js
 
-🇧🇷 **1. Hard skills: ganhar domínio e familiaridade com Vue.js**
+**1. Hard skills: ganhar domínio e familiaridade com Vue.js**
 
-Como meu primeiro projeto usando Vue.js por minha própria conta, entender na prática os mecanismos de funcionamento do framework foi, sem sombra de dúvidas, meu maior desafio.
+🇧🇷 Como meu primeiro projeto usando Vue.js por minha própria conta, entender na prática os mecanismos de funcionamento do framework foi, sem sombra de dúvidas, meu maior desafio.
 
 Uma das partes do projeto que mais me orgulho é o mecanismo de troca das abas, que utiliza a reactividade para atualizar os dados mostrados a partir do index das propriedades de um objeto que contém todas as informações de cada aba. É um mecanismo relativamente simples, mas muito eficiente para atualizar as informações na tela de acordo com o que o usuário quer ver, dispensando assim a necessidade da criação de várias páginas de HTML estáticas.
 
@@ -106,7 +112,6 @@ Example of how a certain element of a tab (in this case an image) is updated:
 2. This click invokes the index selection function of the user selected tab
 3. When the index is updated, the function that returns the image updates the page using Vue's reactivity.
 
-
 #### 2. Soft skills: refine good ideas to the knowledge that I have available now
 
 **2. Soft skills: lapidar ideias muito boas ao conhecimento que tenho disponível agora**
@@ -117,9 +122,11 @@ Example of how a certain element of a tab (in this case an image) is updated:
 
 ### Continued development and next steps
 
-🇧🇷 **Desenvolvimento contínuo e próximos passos**
+**Desenvolvimento contínuo e próximos passos**
 
-Eu tenho muita ciência de que algumas partes do código podiam ter um mecanismo muito mais simples. Quero mergulhar ainda mais em Vue.js para melhorar a qualidade do meu código e aumentar meus conhecimentos para construir soluções cada vez melhores.
+🇧🇷 Eu tenho muita ciência de que algumas partes do código podiam ter um mecanismo muito mais simples. Quero mergulhar ainda mais em Vue.js para melhorar a qualidade do meu código e aumentar meus conhecimentos para construir soluções cada vez melhores.
+
+🇺🇸 I am very aware that some parts of the code could have a much simpler mechanism. I want to dive even deeper into Vue.js to improve the quality of my code and increase my knowledge to build better solutions.
 
 ### Useful resources
 
