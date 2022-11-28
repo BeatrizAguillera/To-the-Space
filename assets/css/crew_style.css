@@ -30,7 +30,7 @@
     margin: 0;
 }
 
-#crewNavBar ul .crewItens {
+.crewItens {
     background-color: #979797;
     width: 12px;
     height: 12px;
@@ -39,11 +39,11 @@
     margin-right: 20px;
 }
 
-#crewNavBar ul .crewItens:hover {
+#crewNavBar ul .crewItens:not(.activeCrew):hover {
     background-color: darkgray;
 }
 
-#crewNavBar ul .crewItens li:active {
+.activeCrew {
     background-color: white;
 }
 

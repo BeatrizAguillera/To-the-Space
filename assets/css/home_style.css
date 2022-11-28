@@ -1,0 +1,42 @@
+#homeTab {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#homeIntroduction {
+    color: var(--clearblue);
+}
+
+#homeTitle {
+  font-size: 150px;
+}
+
+#exploreButton {
+  background-color: #fff;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: var(--marineblue);
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  padding: 4.2em 2.2em;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+#exploreButton:hover {
+  outline: 75px solid rgb(30, 31, 43);
+}
+
+@media screen and (max-width: 770px) {
+    #homeTab {
+  margin-bottom: auto;
+}
+
+#homeIntroduction {
+    
+}
+
+#exploreButton { 
+    margin: 5rem auto;
+}
+}

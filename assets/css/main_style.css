@@ -1,6 +1,7 @@
 @import url(../css/reset_global.css);
 @import url(../css/universal_styles.css);
 @import url(../css/components/header.css);
+@import url(../css/home_style.css);
 @import url(../css/destination_style.css);
 @import url(../css/crew_style.css);
 @import url(../css/technologies_style.css);
@@ -29,31 +30,28 @@
   background-image: url(../technology/background-technology-desktop.jpg);
 }
 
-#homeTab {
-  width: 100%;
-  margin-bottom: 3rem;
+@media screen and (max-width: 770px) {
+.background {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: no-repeat center fixed var(--marineblue);
+  background-size: cover;
 }
 
-.u_mainContainer .u_mainInfo #mainIntroduction {
-    color: var(--clearblue);
+  .homeBackground {
+  background-image: url(../home/background-home-tablet.jpg);
 }
 
-#mainTitle {
-  font-size: 150px;
+.destinationBackground {
+  background-image: url(../destination/background-destination-tablet.jpg);
 }
 
-.u_mainContainer #exploreButton {
-  background-color: #fff;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-  color: var(--marineblue);
-  font-family: "Bellefair", serif;
-  font-size: 28px;
-  padding: 4.2em 2.2em;
-  border-radius: 50%;
-  transition: 0.3s ease-in-out;
+.crewBackground {
+  background-image: url(../crew/background-crew-tablet.jpg);
 }
 
-.u_mainContainer #exploreButton:hover {
-  outline: 75px solid rgb(30, 31, 43);
+.technologyBackground {
+  background-image: url(../technology/background-technology-tablet.jpg);
+}
 }

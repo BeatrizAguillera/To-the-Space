@@ -40,7 +40,7 @@
     font-weight: bold;
 }
 
-#pageHeader #pageMenu li:hover {
+#pageHeader #pageMenu li:not(.activeBorder):hover {
     border-bottom: .2rem solid gray;
 }
 

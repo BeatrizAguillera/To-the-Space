@@ -27,20 +27,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 80px;
     height: 80px;
-    font-size: 32px;
-    font-family: "Bellefair", sans-serif;
-    border: 1px solid white;
+    border: 1px solid gray;
     border-radius: 50%;
 }
 
-.technologyItens:nth-child(2) {
-    margin: 15px auto;
+.technologyItens p {
+    font-size: 32px;
+    font-family: "Bellefair", sans-serif;
 }
 
-.technologyItens:hover {
+.technologyItens:nth-child(2) {
+    margin: 30px auto;
+}
+
+.technologyItens:not(.activeTech):hover {
+    border: 2px solid #FFF;
+}
+
+.activeTech, .activeTech p {
     background-color: white;
     color: var(--marineblue);
-    color: var();
 }

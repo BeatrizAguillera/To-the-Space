@@ -7,9 +7,9 @@ app.component('technologies', {
         <article id="technologyContainer" class="u_contentContainer">
             <nav id="technologiesNavBar">
               <ul>
-                <li class="u_navItens technologyItens" @click="updateTechnology(0)">1</li>
-                <li class="u_navItens technologyItens" @click="updateTechnology(1)">2</li>
-                <li class="u_navItens technologyItens" @click="updateTechnology(2)">3</li>
+                <li class="u_navItens technologyItens" :class="{ activeTech: tech0Active }" @click="updateTechnology(0), activeTechnology()"><p>1</p></li>
+                <li class="u_navItens technologyItens" :class="{ activeTech: tech1Active }" @click="updateTechnology(1), activeTechnology()"><p>2</p></li>
+                <li class="u_navItens technologyItens" :class="{ activeTech: tech2Active }" @click="updateTechnology(2), activeTechnology()"><p>3</p></li>
               </ul>
             </nav>
           <div class="u_mainInfo">
@@ -26,6 +26,9 @@ app.component('technologies', {
 
     data() {
       return {
+        tech0Active: true,
+        tech1Active: false,
+        tech2Active: false,
         selectedTechnology: 0,
         technologies: [
       {
@@ -58,6 +61,18 @@ app.component('technologies', {
   methods: {
     updateTechnology(index) {
       this.selectedTechnology = index
+    },
+    activeTechnology() {
+      this.tech0Active = false;
+      this.tech1Active = false;
+      this.tech2Active = false;
+      if (this.selectedTechnology == 0) {
+        return this.tech0Active = true
+      } else if (this.selectedTechnology == 1) {
+        return this.tech1Active = true
+      } else if (this.selectedTechnology == 2) {
+        return this.tech2Active = true
+      }
     },
   },
   computed: {

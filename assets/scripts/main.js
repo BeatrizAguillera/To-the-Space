@@ -1,12 +1,6 @@
 const app = Vue.createApp({
     data() {
         return {
-            // tabs: [
-            //     { homeTab: true },
-            //     { destinationsTab: false },
-            //     { crewTab: false },
-            //     { technologyTab: false },
-            // ]
             homeTab: true,
             destinationsTab: false,
             crewTab: false,

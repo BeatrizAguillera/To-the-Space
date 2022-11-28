@@ -15,10 +15,10 @@ app.component('crew', {
               <hr>
             <nav class="u_navBar" id="crewNavBar">
               <ul>
-                <li class="u_navItens crewItens" @click="updatecrewMember(0)"></li>
-                <li class="u_navItens crewItens" @click="updatecrewMember(1)"> </li>
-                <li class="u_navItens crewItens" @click="updatecrewMember(2)"> </li>
-                <li class="u_navItens crewItens" @click="updatecrewMember(3)"> </li>
+                <li class="u_navItens crewItens" :class="{ activeCrew: cm0Active }" @click="updateCrewMember(0), activeCrewMember()"></li>
+                <li class="u_navItens crewItens" :class="{ activeCrew: cm1Active }" @click="updateCrewMember(1), activeCrewMember()"></li>
+                <li class="u_navItens crewItens" :class="{ activeCrew: cm2Active }" @click="updateCrewMember(2), activeCrewMember()"></li>
+                <li class="u_navItens crewItens" :class="{ activeCrew: cm3Active }" @click="updateCrewMember(3), activeCrewMember()"></li>
               </ul>
             </nav>
           </div>
@@ -29,7 +29,11 @@ app.component('crew', {
 
     data() {
         return {
-            selectedcrewMember: 0,
+            cm0Active: true,
+            cm1Active: false,
+            cm2Active: false,
+            cm3Active: false,
+            selectedCrewMember: 0,
             crewMembers: [
             {
             name: 'Douglas Hurley',
@@ -59,22 +63,37 @@ app.component('crew', {
             }
     },
     methods: {
-        updatecrewMember(index) {
-            this.selectedcrewMember = index
+        updateCrewMember(index) {
+            this.selectedCrewMember = index
+        },
+        activeCrewMember() {
+            this.cm0Active = false;
+            this.cm1Active = false;
+            this.cm2Active = false;
+            this.cm3Active = false;
+            if (this.selectedCrewMember == 0) {
+                return this.cm0Active = true
+            } else if (this.selectedCrewMember == 1) {
+                return this.cm1Active = true
+            } else if (this.selectedCrewMember == 2) {
+                return this.cm2Active = true
+            } else if (this.selectedCrewMember == 3) {
+                return this.cm3Active = true
+            }
         },
     },
     computed: {
         crewMemberName() {
-            return this.crewMembers[this.selectedcrewMember].name
+            return this.crewMembers[this.selectedCrewMember].name
         },
         crewMemberImage() {
-            return this.crewMembers[this.selectedcrewMember].image
+            return this.crewMembers[this.selectedCrewMember].image
         },
         crewMemberRole() {
-            return this.crewMembers[this.selectedcrewMember].role
+            return this.crewMembers[this.selectedCrewMember].role
         },
         crewMemberDescription() {
-            return this.crewMembers[this.selectedcrewMember].description
+            return this.crewMembers[this.selectedCrewMember].description
         },
     },
 })

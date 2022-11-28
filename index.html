@@ -64,7 +64,7 @@
           </nav>
         </header>
         <div id="componentsContainer">
-          <home v-show="homeTab"></home>
+          <home v-show="homeTab" @hide-tabs="hideTabs" @show-destinations="showDestinations" ></home>
           <destinations v-show="destinationsTab"></destinations>
           <crew v-show="crewTab"></crew>
           <technologies v-show="technologyTab"></technologies>
