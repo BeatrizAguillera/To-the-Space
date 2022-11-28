@@ -91,16 +91,16 @@ Exemplo:
 ```vue.js
 template: {
     <li @click="updateTab(0)">Tab</li>
-}
+},
 methods: {
     updateTab(index) {
       this.selectedTab = index
     },
-}
+},
 computed: {
     tabImage() {
       return this.tabs[this.selectedTab].image
-    },
+},
 ```
 🇺🇸 As my first project using Vue.js on my own, understanding the framework's working mechanisms in practice was, without a doubt, my biggest challenge.
 
