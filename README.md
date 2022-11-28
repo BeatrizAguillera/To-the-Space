@@ -99,7 +99,7 @@ methods: {
 }
 computed: {
     tabImage() {
-      return this.tabs[this.selectedTestination].image
+      return this.tabs[this.selectedTab].image
     },
 ```
 🇺🇸 As my first project using Vue.js on my own, understanding the framework's working mechanisms in practice was, without a doubt, my biggest challenge.
